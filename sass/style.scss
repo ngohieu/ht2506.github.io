@@ -105,6 +105,12 @@ $form-group-margin-bottom:       30px !default;
 * 	Template Style 
 *
 * ======================================================= */
+html{
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
 
 body {
 	font-family: $font-primary;

@@ -28,6 +28,9 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.04);
+  margin: 0 auto;
 }
 
 hr {
@@ -109,6 +112,17 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 40px 0;
   z-index: 1001;
 }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Georgia';
+  color: rgb(255, 255, 255); /*white text*/
+  font-weight: bold
+}
+
 @media screen and (max-width: 768px) {
   .fh5co-nav {
     padding: 20px 0;
@@ -995,6 +1009,11 @@ form label {
   background: rgba(0, 0, 0, 0.04);
 }
 
+.section-gray {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.04);
+}
+
 .couple-wrap {
   width: 90%;
   margin: 0 auto;
@@ -1169,6 +1188,16 @@ form label {
   color: #646464;
   font-family: "Italianno", Arial, serif;
 }
+
+.fh5co-heading .coming_soon {
+  font-size: 70px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #646464;
+  font-family: "Italianno", Arial, serif;
+}
+
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
     font-size: 40px;
