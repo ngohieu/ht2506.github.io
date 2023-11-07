@@ -5,7 +5,7 @@ $(document).ready(function() {
   let currentDate = new Date();
 
   // Target future date/24 hour time/Timezone
-  let targetDate = moment.tz("2023-12-03 12:00", "Asia/Ho Chi Minh");
+  let targetDate = moment.tz("2023-12-03 13:00", "Asia/Ho_Chi_Minh");
 
   // Calculate the difference in seconds between the future and current date
   let diff = targetDate / 1000 - currentDate.getTime() / 1000;
@@ -17,7 +17,6 @@ $(document).ready(function() {
       countdown: true,
       autostart: false
     });
-    
   } else {
     // Run countdown timer
     clock = $(".clock").FlipClock(diff, {
@@ -36,11 +35,21 @@ $(document).ready(function() {
     function checktime() {
       t = clock.getTime();
       if (t <= 0) {
-        clock.setTime(0);
+        clock = countTime()
       }
       setTimeout(function() {
         checktime();
       }, 1000);
+    }
+
+    function countTime() {
+      return $(".clock").FlipClock(0, {
+        clockFace: "DailyCounter",
+        countdown: false,
+        callbacks: {
+          stop: function() {}
+        }
+      });
     }
   }
 });
