@@ -43,6 +43,9 @@ body {
     line-height: 1.7;
     color: #828282;
     background: #fff center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 body #fh5co-header {
@@ -173,9 +176,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .invitation-content {
-    background-color: #74747494;
+    background-color: #505050b8;
     margin-top: 20px;
-    padding: 30px;
+    padding: 10px !important;
     border-radius: 8px;
     border: 3px solid #ffdcc396;
 }
@@ -316,7 +319,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-event {
-    height: 930px;
+    height: 103vh;
     float: left;
 }
 
@@ -618,6 +621,11 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 480px) {
     #fh5co-invitation {
         padding: 7em 0 !important;
+    }
+
+    #fh5co-invitation .container {
+        padding-left: unset !important;
+        padding-right: unset !important;
     }
 
     .timeline:before {
