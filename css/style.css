@@ -49,7 +49,7 @@ body {
 }
 
 body #fh5co-header {
-    background-image: url("../images/bg.jpg");
+    background-image: url("https://ik.imagekit.io/3n82klrzu/TOM_1337.JPG?updatedAt=1699881043950");
     background-position: center;
 }
 
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .invitation-content {
-    background-color: #505050b8;
+    background-color: #505050d4;
     margin-top: 20px;
     padding: 10px !important;
     border-radius: 8px;
@@ -609,7 +609,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .save-the-date {
     color: ghostwhite;
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Fleur', serif;
     font-weight: 600;
 }
@@ -670,7 +670,9 @@ h1, h2, h3, h4, h5, h6, figure {
         width: unset !important;
     }
 }
-
+#main-carousel img {
+    border: solid 8px rgba(255, 255, 255, 0.6);
+}
 .splide__slide {
     opacity: 0.6;
 }
@@ -814,7 +816,7 @@ h1, h2, h3, h4, h5, h6, figure {
     }
 
     body #fh5co-header {
-        background-image:url('../images/bg_mb.jpg')
+        background-image:url('https://ik.imagekit.io/3n82klrzu/TOM_1371.JPG?updatedAt=1699881409774')
     }
 }
 
@@ -1510,6 +1512,16 @@ form label {
     font-weight: 400;
     color: #646464;
     font-family: "Italianno", Arial, serif;
+}
+
+.fh5co-heading .text-normal {
+    font-size: 20px !important;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #646464;
+    font-family: "Italianno", Arial, serif;
+    font-style: oblique;
 }
 
 @media screen and (max-width: 768px) {
@@ -2263,6 +2275,26 @@ form label {
 
 .slick-slide img {
     height: 600px;
+}
+
+.audio-top {
+    position: fixed;
+    bottom: 20px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.audio-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dnone {
+    display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
